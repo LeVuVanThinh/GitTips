@@ -7,5 +7,5 @@ git tag -a 1.2 -m "Version 1.0"
 ## Push tags
 git push --tags
 
-## Remove a recent commit
-git reset --soft HEAD
+## Undo a recent commit
+git reset --soft HEAD~1
