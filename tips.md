@@ -9,3 +9,7 @@ git push --tags
 
 ## Undo a recent commit
 git reset --soft HEAD~1
+
+## Remove recent commit
+git checkout HEAD~1
+git reset --soft HEAD
