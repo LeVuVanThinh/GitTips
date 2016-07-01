@@ -8,8 +8,13 @@ git tag -a 1.2 -m "Version 1.0"
 git push --tags
 
 ## Undo a recent commit
-git reset --soft HEAD~1
+git reset --soft <commit you want to undo>
 
-## Remove recent commit
-git checkout HEAD~1
-git reset --soft HEAD
+## Remove local commit
+git rebase -i
+delete commit you want to delete.
+
+## Remove remote commit
+Remove local commit
+git push origin +develop (git push origin develop --force)
+// Remember that you can't push --force to develop or master by default unless 'master' of repo
